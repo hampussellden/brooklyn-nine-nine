@@ -10,6 +10,6 @@
 
 <body>
     <header>
-        <button><a href="cast.php"></a></button>
-        <button><a href="index.php"></a></button>
+        <button><a href="index.php">Home</a></button>
+        <button><a href="cast.php">Cast</a></button>
     </header>
