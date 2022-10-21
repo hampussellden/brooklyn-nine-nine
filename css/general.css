@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --cop-blue: #6ca9c3;
+  --yellow: #fcf40e;
+  --gray: #3a3533;
+  --dark-blue: #000e33;
+  --dark-red: #800000;
+}
+section.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 0px solid gray;
+  box-shadow: 0px 0px 2px 2px gray;
+  padding: 8px;
+}
+.card .card-top {
+  display: flex;
+  flex-direction: row;
+}
+.card img {
+  max-width: 70px;
+  max-height: 120px;
+}
