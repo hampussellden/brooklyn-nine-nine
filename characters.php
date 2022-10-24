@@ -1,6 +1,6 @@
 <?php require_once 'header.php'; ?>
 <?php require 'data/charactersArray.php'; ?>
-<h1> Characters in the show:</h1>
+<h2> Characters in the show:</h2>
 
 <section class="cards">
     <?php shuffle($characters); ?>
@@ -17,7 +17,4 @@
         </article>
     <?php endforeach ?>
 </section>
-<?php
-var_dump($characters);
-?>
 <?php require 'footer.php'; ?>

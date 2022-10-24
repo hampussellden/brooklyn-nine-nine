@@ -22,6 +22,7 @@ declare(strict_types=1); ?>
         <ul>
             <li><a href="index.php">Home</a></li>
             <li><a href="characters.php">Characters</a></li>
+            <li><a href="quiz.php">Quiz</a></li>
         </ul>
 
     </header>
