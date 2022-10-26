@@ -16,12 +16,9 @@
         <article class="question">
             <h3> <?= $question ?></h3>
             <div class="answers">
-                <?php
-                //for-loop generates the options
-                for ($i = 0; $i < 3; $i++) : ?>
-                    <input type="radio" class="answer" value="answer<?= $inputN; ?>" name="<?= $inputN++; ?>"> <?= $answers[$counter][$i] ?>
+                <?php for ($i = 0; $i < 3; $i++) : ?>
+                    <input type="radio" class="answer" value="answer<?= $inputN++; ?>" name="<?= $counter ?>"> <?= $answers[$counter][$i] ?>
                 <?php endfor ?>
-
                 <?php $counter++; //We up the counter to make sure we pick the correct options with next iteration
                 ?>
             </div>
