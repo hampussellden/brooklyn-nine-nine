@@ -5,7 +5,7 @@ $characters = [
         'name' => 'Jake Peralta',
         'actor' =>
         'Andy Samberg',
-        'description' => "Peralta is a cop that has never been one to follow the rules too closely. Perhaps because he has the best arrest record among his colleagues, he's been enabled - if not indulged - throughout his entire career. That is, until the precinct gets a new commanding officer, Captain Raymond Holt, who reminds this hotshot cop to respect the badge. As once described by his seargent: He likes putting away bad guys and he solving puzzles. The only puzzle he hasn't solved is how to grow up.",
+        'description' => "Peralta is a cop that has never been one to follow the rules too closely. Perhaps because he has the best arrest record among his colleagues, he's been enabled - if not indulged - throughout his entire career. That is, until the precinct gets a new commanding officer, Captain Raymond Holt, who reminds this hotshot cop to respect the badge. As once described by his seargent: He loves putting away bad guys and solving puzzles. The only puzzle he hasn't solved is how to grow up.",
         'photo' => 'data/images/characters/Jake.jpeg',
         'Occupation' => 'Detective'
     ],
@@ -33,7 +33,7 @@ $characters = [
     [
         'name' => 'Charles Boyle',
         'actor' => 'Joe Lo Truglio',
-        'description' => "Charles is the precint's workhorse. He might not be the smartest or most physically gifted member of the squad, but he works harder than anyone else. He is a hopeless romantic, that is not afraid to share details that others would keep to themselves and often make dirty references without being aware of it himself. Charles is Jake's best friend and they always want to work cases together.",
+        'description' => "Charles is the precint's workhorse. He might not be the smartest or most physically gifted member of the squad, but he works harder than anyone else. He is a hopeless romantic, that is not afraid to share details that others would keep to themselves and often make dirty references without being aware of it himself. Charles is Jake's best friend and they always want to work cases together. Charles is also a huge foodie!",
         'photo' => 'data/images/characters/Charles.jpg',
         'Occupation' => 'Detective'
     ],

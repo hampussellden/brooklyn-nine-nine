@@ -6,18 +6,20 @@
 <!-- Create a form with cards of questions and answers -->
 <form action="results.php" method="post">
 
-    <?php
-    //counter that acts like and index for the inner loop
-    $counter = 0;
-    $inputN = 1; //this variable will be used to give each answered its own value, which it will carry over with the form and be used to assign points
+    <!-- counter that acts like and index for the inner loop -->
+    <?php $counter = 0; ?>
+    <?php $inputN = 1; ?>
+    <!-- this variable will be used to give each answered its own value, which it will carry over with the form and be used to assign points -->
 
-    //foreach loop generates questions
-    foreach ($questions as $question) : ?>
+    <!-- foreach loop generates questions -->
+    <?php foreach ($questions as $question) : ?>
         <article class="question">
-            <h3> <?= $question ?></h3>
+            <h3>Question #<?= $counter + 1 ?></h3>
+            <h4> <?= $question ?></h4>
             <div class="answers">
                 <?php for ($i = 0; $i < 3; $i++) : ?>
-                    <input type="radio" class="answer" value="answer<?= $inputN++; ?>" name="<?= $counter ?>"> <?= $answers[$counter][$i] ?>
+                    <input type="radio" class="answer" value="answer<?= $inputN ?>" id="answer<?= $inputN ?>" name="<?= $counter ?>">
+                    <label for="answer<?= $inputN++; ?>"><?= $answers[$counter][$i] ?></label>
                 <?php endfor ?>
                 <?php $counter++; //We up the counter to make sure we pick the correct options with next iteration
                 ?>
