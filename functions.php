@@ -9,6 +9,16 @@ function getPoints(array $arrays): int
             $points++;
         } else if ($value === 'answer8') {
             $points++;
+        } else if ($value === 'answer12') {
+            $points++;
+        } else if ($value === 'answer15') {
+            $points++;
+        } else if ($value === 'answer17') {
+            $points++;
+        } else if ($value === 'answer19') {
+            $points++;
+        } else if ($value === 'answer24') {
+            $points++;
         } else {
             continue;
         }
@@ -17,18 +27,11 @@ function getPoints(array $arrays): int
 }
 function evaluation(int $points): string
 {
-    switch ($points) {
-        case 3:
-            return 'WOW you got all questions right! You must be a huge fan of the show!';
-            break;
-        case 2:
-            return 'You scored 2 points, almost got all of them, maybe we should binge the series again to find out what we missed out on?';
-            break;
-        case 1:
-            return 'Only 1 point, was that good guess or is your knowledge of the show just bad.';
-            break;
-        default:
-            return 'No correct answers, are you even a fan of the show?';
-            break;
-    }
+    return match (true) {
+        $points == 8 => 'WOW you got all ' . $points . ' questions right! You must be a huge fan of the show!',
+        $points > 5 => 'You got ' . $points . ' questions right! maybe we should binge the series again to find out what we missed out on?',
+        $points > 3 => 'You scored 2 points, almost got all of them, maybe we should binge the series again to find out what we missed out on?',
+        $points > 0 => $points . ' points is not a good result at all... Have you even seen the show?',
+        default => 'No correct answers, why are you even here?'
+    };
 }

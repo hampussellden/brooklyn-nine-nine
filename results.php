@@ -2,7 +2,7 @@
 <?php require 'functions.php' ?>
 
 <h2>Quiz results</h2>
-<?php $totalPoints = getPoints($_POST); //Get the total score from our form using a
+<?php $totalPoints = getPoints($_POST); //Get the total score from our form
 ?>
 
 <h3>You scored <?= $totalPoints ?> points</h3>
