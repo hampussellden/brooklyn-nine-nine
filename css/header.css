@@ -11,6 +11,7 @@ header {
   top: 0;
   border-bottom: 2px solid var(--dark-blue);
 }
+
 header h1,
 header ul li,
 header ul a {
@@ -19,7 +20,7 @@ header ul a {
   list-style: none;
 }
 header h1 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   text-shadow: 0px 0px 2px var(--dark-blue);
 }
 header ul {
@@ -28,7 +29,7 @@ header ul {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  max-width: 45%;
+  max-width: 60%;
   margin: 0px 8px 0px 0px;
 }
 header li {
@@ -37,11 +38,22 @@ header li {
   transition: 0.2 ease;
   margin-left: 8px;
   margin-right: 8px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-shadow: 0px 0px 2px var(--dark-blue);
 }
 header li:hover {
   background-color: var(--mid-blue);
   opacity: 0.9;
   transform: translateY(-3px);
+}
+@media screen and (min-width: 730px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+  header ul {
+    max-width: 45%;
+  }
+  header ul li {
+    font-size: 1.5rem;
+  }
 }
