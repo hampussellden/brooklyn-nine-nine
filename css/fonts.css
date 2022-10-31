@@ -6,7 +6,7 @@
 @font-face {
   font-family: 'noto-sans';
   src: url('../fonts/Noto_Sans.woff/NotoSans-Bold.woff') format('woff'),
-    url('../fonts/Noto_Sans.woff/NotoSans-Bold.woff') format('woff2');
+    url('../fonts/Noto_Sans.woff/NotoSans-Bold.woff2') format('woff2');
   font-weight: 800;
 }
 @font-face {
@@ -18,7 +18,7 @@
 @font-face {
   font-family: 'noto-sans';
   src: url('../fonts/Noto_Sans.woff/NotoSans-BoldItalic.woff') format('woff'),
-    url('../fonts/Noto_Sans.woff/NotoSans-BoldItalic.woff') format('woff2');
+    url('../fonts/Noto_Sans.woff/NotoSans-BoldItalic.woff2') format('woff2');
   font-weight: 800;
   font-style: italic;
 }
