@@ -1,7 +1,6 @@
 <?php require 'header.php'; ?>
 <?php require 'data/quizData.php'; ?>
-<main>
-
+<main class="quiz">
     <h2>Quiz time</h2>
     <?php session_start() ?>
     <!-- Create a form with cards of questions and answers -->
