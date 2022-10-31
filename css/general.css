@@ -7,22 +7,55 @@
   --gray: #3a3533;
   --dark-blue: #000e33;
   --dark-red: #800000;
-  --mid-blue: #5f9fba;
+  --mid-blue: #5998b3;
   --off-white: #dbdbdb;
 }
 body {
   padding-top: 85px;
-  height: 100%;
   margin: 0 auto;
   font-family: 'noto-sans';
   color: var(--dark-blue);
   background-color: var(--cop-blue);
+  position: relative;
 }
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+/* Landing page styling */
+
+section.landing-page {
+  max-width: 80%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.landing-page p {
+  font-size: 1.25rem;
+}
+section.landing-page ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  gap: 24px;
+}
+section.landing-page li,
+section.landing-page a {
+  text-decoration: underline;
+  list-style: none;
+  color: var(--yellow);
+}
+section.landing-page li {
+  padding: 24px;
+  border: 1px solid var(--dark-blue);
+  border-radius: 16px;
+}
+
+/* characters page-styling */
 section.cards {
   display: flex;
   flex-wrap: wrap;
@@ -65,4 +98,62 @@ h4 {
 .card-title h4,
 .card-title h3 {
   margin: 4px;
+}
+/* Quiz-styling */
+
+article.question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid var(--dark-blue);
+  border-radius: 8px;
+  padding: 8px;
+  margin: 0px 24px 24px 24px;
+  max-width: 700px;
+  max-height: 300px;
+  background-color: var(--off-white);
+}
+article.question h3 {
+  font-size: 1rem;
+  margin: 4px;
+  color: var(--gray);
+}
+article.question h4 {
+  font-size: 1.25rem;
+  margin: 4px;
+  text-align: center;
+  color: var(--dark-blue);
+}
+div.answers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 16px;
+  color: var(--dark-blue);
+  flex: 1fr;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form input.submit {
+  background-color: var(--dark-red);
+  color: var(--off-white);
+  border: 0px solid;
+  border-radius: 8px;
+  padding: 16px 8px;
+  width: 75%;
+  font-weight: 800;
+  font-size: 2rem;
+  align-self: center;
+}
+form input.submit:hover {
+  opacity: 0.8;
+  transform: translateY(-3px);
+}
+label:hover,
+input:hover {
+  cursor: pointer;
 }
