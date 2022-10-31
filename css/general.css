@@ -15,8 +15,11 @@ body {
   margin: 0 auto;
   font-family: 'noto-sans';
   color: var(--dark-blue);
-  background-color: var(--cop-blue);
   position: relative;
+  font-family: 'noto-sans';
+  background-image: url('../data/images/wallpaper/bridge.jpeg');
+  background-position: 50% 75%;
+  background-size: auto;
 }
 main {
   display: flex;
