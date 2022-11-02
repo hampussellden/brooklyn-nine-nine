@@ -2,9 +2,11 @@
 
 # Brooklyn Nine Nine
 
-Text about the project and why it exists. This would also be a great place to link the project on One.com.
+This website is centered around one of my favourite tv-series. Earlier this year the show aired its 8th and final season, which is now available on netflix in Sweden. I have followed the show since its start in 2013 and when I was waiting for new seasons I sometimes rewatched the seasons that were available.
+I chose the theme for the projekt pretty quickly, because I wanted to set a theme early and get to work fast. I had just finished the last season and it was fresh in my mind.
+Here is the link to the site: https://bosse.ai/brooklyn-nine-nine/
 
-# Installation
+## Installation
 
 There are 2 major content pages of the site, the **characters-page** and the **quiz-page**.
 We can navigate to the pages using either the header or the frame on the landing page.
@@ -14,7 +16,7 @@ The names of the actors are also links to their IMDB.com pages, and if hovered s
 Now that we have refreshed our memories of the characters in the show we can take the **quiz**.
 The quiz gives us three options to every question, one is always right. When we submit our answers we will be directed to the results page where we can see how many points we got and be evaluated.
 
-# Code Review
+## Code Review
 
 Code review written by [Jane Doh](https://github.com/username).
 
