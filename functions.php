@@ -37,3 +37,10 @@ function evaluation(int $points): string
         default => 'No correct answers, why are you even here?'
     };
 }
+
+function calculateAge(int $birth): int
+{
+    $today = date("Y", time());
+    $birth = date("Y", $birth);
+    return ($today - $birth);
+}

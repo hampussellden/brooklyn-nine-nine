@@ -13,7 +13,6 @@
 body {
   padding-top: 80px;
   margin: 0 auto;
-  font-family: 'noto-sans';
   color: var(--dark-blue);
   position: relative;
   font-family: 'noto-sans';
@@ -56,7 +55,7 @@ section.landing-page ul {
 }
 section.landing-page li,
 section.landing-page a {
-  text-decoration: underline;
+  text-decoration: none;
   list-style: none;
   color: var(--yellow);
   text-shadow: 0px 0px 2px var(--dark-blue);
@@ -66,6 +65,9 @@ section.landing-page li {
   border: 1px solid var(--dark-blue);
   border-radius: 16px;
   background-color: var(--cop-blue);
+}
+section.landing-page li:hover {
+  transform: translateY(-3px);
 }
 
 /* characters page-styling */
@@ -105,10 +107,38 @@ h4 {
   width: 70px;
   height: 100px;
   border-radius: 8px;
+  object-fit: cover;
 }
 .card .card-title {
   margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
+.card .card-title a {
+  text-decoration: none;
+  color: inherit;
+}
+/* tooltip testing */
+div.actor-tooltip {
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  border: 1px solid var(--dark-blue);
+  border-radius: 8px;
+  margin: 4px;
+  align-self: center;
+  box-shadow: 1px 1px 2px 1px var(--dark-blue);
+  background-color: var(--mid-blue);
+}
+.actor-tooltip p {
+  margin: 4px 8px;
+  color: var(--yellow);
+}
+div.card-title h4:hover ~ .actor-tooltip {
+  visibility: visible;
+}
+/* end tooltip testing */
 .card-title h4,
 .card-title h3 {
   margin: 4px;
@@ -180,7 +210,7 @@ section.results-presentation {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 15% 10% 15% 10%;
+  margin: 15% 10% 25% 10%;
   padding: 24px;
   max-width: 40%;
   background-color: var(--off-white);

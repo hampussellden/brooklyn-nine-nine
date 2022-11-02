@@ -29,7 +29,7 @@
             </article>
         <?php endforeach ?>
 
-        <input class="submit" type="submit" name="submitAnswers">
+        <input class="submit" type="submit" name="submitAnswers" value="Submit">
     </form>
 </main>
 
