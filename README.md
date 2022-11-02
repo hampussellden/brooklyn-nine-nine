@@ -3,7 +3,7 @@
 # Brooklyn Nine Nine
 
 This website is centered around one of my favourite tv-series. Earlier this year the show aired its 8th and final season, which is now available on netflix in Sweden. I have followed the show since its start in 2013 and when I was waiting for new seasons I sometimes rewatched the seasons that were available.
-I chose the theme for the projekt pretty quickly, because I wanted to set a theme early and get to work fast. I had just finished the last season and it was fresh in my mind.
+I chose the theme for the project pretty quickly, because I wanted to set a theme early and get to work fast. I had just finished the last season and it was fresh in my mind.
 Here is the link to the site: https://bosse.ai/brooklyn-nine-nine/
 
 ## Installation
