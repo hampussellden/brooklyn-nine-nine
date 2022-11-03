@@ -2,7 +2,6 @@
 <?php require 'data/quizData.php'; ?>
 <main class="quiz">
     <h2>Quiz time</h2>
-    <?php session_start() ?>
     <!-- Create a form with cards of questions and answers -->
     <form action="results.php" method="post">
 
