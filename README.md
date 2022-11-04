@@ -18,13 +18,16 @@ The quiz gives us three options to every question, one is always right. When we 
 
 ## Code Review
 
-Code review written by [Jane Doh](https://github.com/username).
+Code review written by Petter Jakobsson(https://github.com/jaken92).
 
-1. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-2. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-3. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-4. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-5. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
+1. Slightly confusing variable name on $inputN, quiz.php, line 10. The functionality could be made clearer by calling it something like $inputNum.
+2. The relation between $inputN, $counter and the foreach with the nestled forloop in quiz.php could be further explained by a comment to allow for easier understanding. It is a nice way to achive the desired layout of the quiz, but it takes a fair amount of investigation to understand what all the variables are for. 
+3. functions.php getPoints(), at first glance it looks like a wrong answer could give a false point further down in the statement. Since you are using a logic of matching one of the answers answer1-answer3, answer4-answer6, answer7-answer9 it would be nice with a comment explaining this. 
+4. Functions.php line 4 getPoints() function. I think another way to achieve the same result would be to store the correct answers in an array and call a function with arguments userAnswer and correctAnswer as arguments foreach stored user answer. This way i feel the code would be more dynamic if youd like to expand the quiz as there would be no need to change the function.
+5. To take the page to the next level, making the site responsive would be a nice upgrade. 
+6. Overall very nice code for readability, i had to nitpick to find things. =)
+
+
 
 # Testers
 
